@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Source PDF and generated artefacts (rebuilt by backend/scripts/ingest.py)
+backend/data/raw/*.pdf
+backend/data/processed/
+backend/data/index/
+backend/data/cache/
+backend/.models/
+*_bundle.zip
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

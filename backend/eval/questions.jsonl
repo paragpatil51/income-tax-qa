@@ -1,0 +1,38 @@
+{"id": "q01", "question": "I own a residential property that I have rented out. Can I claim a 30% deduction on the annual value of the property? I also have a housing loan on this property. Can I claim a deduction for the interest paid on the loan? Which sections of the Income-tax Act apply?", "expected_sections": ["24", "23"], "answerable": true}
+{"id": "q02", "question": "What deductions are available for life insurance premium and provident fund contributions?", "expected_sections": ["80C"], "answerable": true}
+{"id": "q03", "question": "Is agricultural income taxable?", "expected_sections": ["10", "2"], "answerable": true}
+{"id": "q04", "question": "How is the residential status of an individual determined?", "expected_sections": ["6"], "answerable": true}
+{"id": "q05", "question": "Can I claim a deduction for health insurance premium paid for my parents?", "expected_sections": ["80D"], "answerable": true}
+{"id": "q06", "question": "Is interest paid on an education loan deductible?", "expected_sections": ["80E"], "answerable": true}
+{"id": "q07", "question": "What deduction is allowed for donations to charitable institutions and funds?", "expected_sections": ["80G"], "answerable": true}
+{"id": "q08", "question": "If I sell my residential house and buy another house with the long-term capital gain, is the gain exempt?", "expected_sections": ["54"], "answerable": true}
+{"id": "q09", "question": "What is the due date for filing a return of income?", "expected_sections": ["139"], "answerable": true}
+{"id": "q10", "question": "Who is liable to pay advance tax?", "expected_sections": ["208", "207"], "answerable": true}
+{"id": "q11", "question": "What interest is charged for default in payment of advance tax?", "expected_sections": ["234B", "234C"], "answerable": true}
+{"id": "q12", "question": "Is my employer required to deduct tax at source on salary?", "expected_sections": ["192"], "answerable": true}
+{"id": "q13", "question": "Is tax deducted at source on rent payments?", "expected_sections": ["194I"], "answerable": true}
+{"id": "q14", "question": "Is a gift of money received from a relative taxable?", "expected_sections": ["56"], "answerable": true}
+{"id": "q15", "question": "Is gratuity received on retirement exempt from tax?", "expected_sections": ["10"], "answerable": true}
+{"id": "q16", "question": "Is there a standard deduction from salary income?", "expected_sections": ["16"], "answerable": true}
+{"id": "q17", "question": "What is the definition of a capital asset?", "expected_sections": ["2"], "answerable": true}
+{"id": "q18", "question": "Can a loss under the head income from house property be set off against salary income?", "expected_sections": ["71", "71B"], "answerable": true}
+{"id": "q19", "question": "Can business losses be carried forward to later years?", "expected_sections": ["72"], "answerable": true}
+{"id": "q20", "question": "How is depreciation on plant and machinery allowed?", "expected_sections": ["32"], "answerable": true}
+{"id": "q21", "question": "Is the income of a minor child added to the income of the parent?", "expected_sections": ["64"], "answerable": true}
+{"id": "q22", "question": "What tax rebate is available to resident individuals with low income?", "expected_sections": ["87A"], "answerable": true}
+{"id": "q23", "question": "What are the tax rates under the new tax regime for individuals?", "expected_sections": ["115BAC"], "answerable": true}
+{"id": "q24", "question": "What is the penalty for under-reporting of income?", "expected_sections": ["270A"], "answerable": true}
+{"id": "q25", "question": "What is the time limit for issuing a notice for income escaping assessment?", "expected_sections": ["149", "148"], "answerable": true}
+{"id": "q26", "question": "How does presumptive taxation work for small businesses?", "expected_sections": ["44AD"], "answerable": true}
+{"id": "q27", "question": "Is there presumptive taxation for professionals like doctors and lawyers?", "expected_sections": ["44ADA"], "answerable": true}
+{"id": "q28", "question": "When is a tax audit of accounts compulsory?", "expected_sections": ["44AB"], "answerable": true}
+{"id": "q29", "question": "Is interest on a savings bank account deductible?", "expected_sections": ["80TTA"], "answerable": true}
+{"id": "q30", "question": "I do not receive house rent allowance. Can I claim a deduction for rent paid?", "expected_sections": ["80GG"], "answerable": true}
+{"id": "q31", "question": "Is house rent allowance exempt?", "expected_sections": ["10"], "answerable": true}
+{"id": "q32", "question": "Is a business expense paid in cash above a certain amount disallowed?", "expected_sections": ["40A"], "answerable": true}
+{"id": "q33", "question": "Can I accept a loan of a large amount in cash?", "expected_sections": ["269SS"], "answerable": true}
+{"id": "q34", "question": "What does section 80C provide?", "expected_sections": ["80C"], "answerable": true}
+{"id": "q35", "question": "What is the GST rate on restaurant services?", "expected_sections": [], "answerable": false}
+{"id": "q36", "question": "How much stamp duty is payable on registering a property in Maharashtra?", "expected_sections": [], "answerable": false}
+{"id": "q37", "question": "What is the punishment for theft under the Indian penal law?", "expected_sections": [], "answerable": false}
+{"id": "q38", "question": "What is the basic customs duty on imported gold?", "expected_sections": [], "answerable": false}

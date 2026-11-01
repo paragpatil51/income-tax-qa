@@ -1,0 +1,1254 @@
+{
+ "metrics": {
+  "mode": "retrieval (no LLM)",
+  "answerable_questions": 34,
+  "unanswerable_questions": 4,
+  "section_hit@1": 0.647,
+  "section_hit@3": 0.971,
+  "section_hit@5": 1.0,
+  "section_hit@10": 1.0,
+  "MRR": 0.787,
+  "expected_section_in_llm_context": 1.0,
+  "all_expected_sections_in_context": 0.941,
+  "abstention_correct_on_unanswerable": 1.0,
+  "false_abstention_on_answerable": 0.118,
+  "best_score_answerable_median": 0.94,
+  "best_score_answerable_min": 0.009,
+  "best_score_unanswerable_max": 0.075,
+  "min_relevance_threshold": 0.1,
+  "median_latency_ms": 3288.5,
+  "p90_latency_ms": 3753
+ },
+ "rows": [
+  {
+   "id": "q01",
+   "question": "I own a residential property that I have rented out. Can I claim a 30% deduction on the annual value of the property? I also have a housing loan on this property. Can I claim a deduction for the interest paid on the loan? Which sections of the Income-tax Act apply?",
+   "answerable": true,
+   "expected": [
+    "24",
+    "23"
+   ],
+   "top_sections": [
+    "80EEA",
+    "80EE",
+    "23",
+    "25",
+    "22",
+    "24",
+    "30",
+    "80HHBA"
+   ],
+   "context_sections": [
+    "80EEA",
+    "80EE",
+    "23",
+    "25",
+    "22"
+   ],
+   "sub_queries": [
+    "I own a residential property that I have rented out. Can I claim a 30% deduction on the annual value of the property? I also have a housing loan on this property. Can I claim a deduction for the interest paid on the loan? Which sections of the Income-tax Act apply?"
+   ],
+   "best_score": 0.409,
+   "first_relevant_rank": 3,
+   "in_context": true,
+   "all_expected_in_context": false,
+   "latency_ms": 2118
+  },
+  {
+   "id": "q02",
+   "question": "What deductions are available for life insurance premium and provident fund contributions?",
+   "answerable": true,
+   "expected": [
+    "80C"
+   ],
+   "top_sections": [
+    "80C",
+    "88",
+    "80DDB",
+    "36",
+    "80U"
+   ],
+   "context_sections": [
+    "80C"
+   ],
+   "sub_queries": [
+    "What deductions are available for life insurance premium and provident fund contributions?"
+   ],
+   "best_score": 0.983,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2277
+  },
+  {
+   "id": "q03",
+   "question": "Is agricultural income taxable?",
+   "answerable": true,
+   "expected": [
+    "10",
+    "2"
+   ],
+   "top_sections": [
+    "91",
+    "209",
+    "2",
+    "35C",
+    "10",
+    "54B",
+    "80P",
+    "80PA"
+   ],
+   "context_sections": [
+    "91",
+    "209",
+    "2",
+    "35C",
+    "10",
+    "54B",
+    "210"
+   ],
+   "sub_queries": [
+    "Is agricultural income taxable?"
+   ],
+   "best_score": 0.934,
+   "first_relevant_rank": 3,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2954
+  },
+  {
+   "id": "q04",
+   "question": "How is the residential status of an individual determined?",
+   "answerable": true,
+   "expected": [
+    "6"
+   ],
+   "top_sections": [
+    "6",
+    "80EE",
+    "54F",
+    "27",
+    "23",
+    "80EEA",
+    "94A",
+    "246"
+   ],
+   "context_sections": [
+    "6",
+    "80EE",
+    "54F"
+   ],
+   "sub_queries": [
+    "How is the residential status of an individual determined?"
+   ],
+   "best_score": 0.009,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2765
+  },
+  {
+   "id": "q05",
+   "question": "Can I claim a deduction for health insurance premium paid for my parents?",
+   "answerable": true,
+   "expected": [
+    "80D"
+   ],
+   "top_sections": [
+    "80D",
+    "56",
+    "194D",
+    "30",
+    "80C",
+    "36",
+    "194DA",
+    "80DDB"
+   ],
+   "context_sections": [
+    "80D"
+   ],
+   "sub_queries": [
+    "Can I claim a deduction for health insurance premium paid for my parents?"
+   ],
+   "best_score": 0.345,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 1994
+  },
+  {
+   "id": "q06",
+   "question": "Is interest paid on an education loan deductible?",
+   "answerable": true,
+   "expected": [
+    "80E"
+   ],
+   "top_sections": [
+    "80E",
+    "193",
+    "80EE",
+    "80EEA",
+    "43B",
+    "40",
+    "58",
+    "25"
+   ],
+   "context_sections": [
+    "80E",
+    "193",
+    "80EE",
+    "10",
+    "80G"
+   ],
+   "sub_queries": [
+    "Is interest paid on an education loan deductible?"
+   ],
+   "best_score": 0.993,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 5545
+  },
+  {
+   "id": "q07",
+   "question": "What deduction is allowed for donations to charitable institutions and funds?",
+   "answerable": true,
+   "expected": [
+    "80G"
+   ],
+   "top_sections": [
+    "80G",
+    "12",
+    "115BBC",
+    "11",
+    "10",
+    "2"
+   ],
+   "context_sections": [
+    "80G",
+    "2"
+   ],
+   "sub_queries": [
+    "What deduction is allowed for donations to charitable institutions and funds?"
+   ],
+   "best_score": 0.997,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 5629
+  },
+  {
+   "id": "q08",
+   "question": "If I sell my residential house and buy another house with the long-term capital gain, is the gain exempt?",
+   "answerable": true,
+   "expected": [
+    "54"
+   ],
+   "top_sections": [
+    "54F",
+    "54",
+    "53",
+    "54GB",
+    "54EC",
+    "54EB",
+    "54EE",
+    "54EA"
+   ],
+   "context_sections": [
+    "54F",
+    "54",
+    "53",
+    "54GB",
+    "54EC",
+    "54EB",
+    "45"
+   ],
+   "sub_queries": [
+    "If I sell my residential house and buy another house with the long-term capital gain, is the gain exempt?"
+   ],
+   "best_score": 0.792,
+   "first_relevant_rank": 2,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2909
+  },
+  {
+   "id": "q09",
+   "question": "What is the due date for filing a return of income?",
+   "answerable": true,
+   "expected": [
+    "139"
+   ],
+   "top_sections": [
+    "271",
+    "80M",
+    "139",
+    "115WD",
+    "115BAE",
+    "210",
+    "13",
+    "234A"
+   ],
+   "context_sections": [
+    "271",
+    "80M",
+    "139",
+    "115WD",
+    "115BAE",
+    "210",
+    "13",
+    "143",
+    "92B"
+   ],
+   "sub_queries": [
+    "What is the due date for filing a return of income?"
+   ],
+   "best_score": 0.894,
+   "first_relevant_rank": 3,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3843
+  },
+  {
+   "id": "q10",
+   "question": "Who is liable to pay advance tax?",
+   "answerable": true,
+   "expected": [
+    "208",
+    "207"
+   ],
+   "top_sections": [
+    "208",
+    "210",
+    "234C",
+    "273",
+    "115WJ",
+    "211",
+    "234B",
+    "209"
+   ],
+   "context_sections": [
+    "208",
+    "210",
+    "234C",
+    "273",
+    "115WJ",
+    "211",
+    "234B",
+    "209"
+   ],
+   "sub_queries": [
+    "Who is liable to pay advance tax?"
+   ],
+   "best_score": 0.995,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": false,
+   "latency_ms": 3559
+  },
+  {
+   "id": "q11",
+   "question": "What interest is charged for default in payment of advance tax?",
+   "answerable": true,
+   "expected": [
+    "234B",
+    "234C"
+   ],
+   "top_sections": [
+    "234B",
+    "215",
+    "218",
+    "234C",
+    "219",
+    "214",
+    "220",
+    "216"
+   ],
+   "context_sections": [
+    "234B",
+    "215",
+    "218",
+    "234C",
+    "219",
+    "147",
+    "153A"
+   ],
+   "sub_queries": [
+    "What interest is charged for default in payment of advance tax?"
+   ],
+   "best_score": 0.997,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3396
+  },
+  {
+   "id": "q12",
+   "question": "Is my employer required to deduct tax at source on salary?",
+   "answerable": true,
+   "expected": [
+    "192"
+   ],
+   "top_sections": [
+    "192",
+    "201",
+    "194T",
+    "197",
+    "194M",
+    "16",
+    "271C",
+    "15"
+   ],
+   "context_sections": [
+    "192",
+    "201",
+    "194T"
+   ],
+   "sub_queries": [
+    "Is my employer required to deduct tax at source on salary?"
+   ],
+   "best_score": 0.989,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2541
+  },
+  {
+   "id": "q13",
+   "question": "Is tax deducted at source on rent payments?",
+   "answerable": true,
+   "expected": [
+    "194I"
+   ],
+   "top_sections": [
+    "194IB",
+    "194I",
+    "194S",
+    "192",
+    "194C",
+    "203",
+    "80GG",
+    "199"
+   ],
+   "context_sections": [
+    "194IB",
+    "194I",
+    "194S",
+    "192",
+    "194C",
+    "203",
+    "203A",
+    "206AA"
+   ],
+   "sub_queries": [
+    "Is tax deducted at source on rent payments?"
+   ],
+   "best_score": 0.997,
+   "first_relevant_rank": 2,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2456
+  },
+  {
+   "id": "q14",
+   "question": "Is a gift of money received from a relative taxable?",
+   "answerable": true,
+   "expected": [
+    "56"
+   ],
+   "top_sections": [
+    "56",
+    "164",
+    "2",
+    "115BBA",
+    "45",
+    "51",
+    "36",
+    "10"
+   ],
+   "context_sections": [
+    "56",
+    "10",
+    "12AA"
+   ],
+   "sub_queries": [
+    "Is a gift of money received from a relative taxable?"
+   ],
+   "best_score": 0.105,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3637
+  },
+  {
+   "id": "q15",
+   "question": "Is gratuity received on retirement exempt from tax?",
+   "answerable": true,
+   "expected": [
+    "10"
+   ],
+   "top_sections": [
+    "80CCD",
+    "40A",
+    "10",
+    "FOURTHSCHEDULE",
+    "176",
+    "89",
+    "89A",
+    "4"
+   ],
+   "context_sections": [
+    "80CCD",
+    "40A",
+    "10",
+    "FOURTHSCHEDULE"
+   ],
+   "sub_queries": [
+    "Is gratuity received on retirement exempt from tax?"
+   ],
+   "best_score": 0.998,
+   "first_relevant_rank": 3,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3301
+  },
+  {
+   "id": "q16",
+   "question": "Is there a standard deduction from salary income?",
+   "answerable": true,
+   "expected": [
+    "16"
+   ],
+   "top_sections": [
+    "17",
+    "192",
+    "16",
+    "115BAC",
+    "115JB",
+    "57",
+    "36",
+    "80P"
+   ],
+   "context_sections": [
+    "17",
+    "192",
+    "16",
+    "80CCD",
+    "80CCH"
+   ],
+   "sub_queries": [
+    "Is there a standard deduction from salary income?"
+   ],
+   "best_score": 0.552,
+   "first_relevant_rank": 3,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3481
+  },
+  {
+   "id": "q17",
+   "question": "What is the definition of a capital asset?",
+   "answerable": true,
+   "expected": [
+    "2"
+   ],
+   "top_sections": [
+    "2",
+    "49",
+    "54F",
+    "115C",
+    "10",
+    "43",
+    "28"
+   ],
+   "context_sections": [
+    "2",
+    "49",
+    "115UB",
+    "10"
+   ],
+   "sub_queries": [
+    "What is the definition of a capital asset?"
+   ],
+   "best_score": 0.957,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 4330
+  },
+  {
+   "id": "q18",
+   "question": "Can a loss under the head income from house property be set off against salary income?",
+   "answerable": true,
+   "expected": [
+    "71",
+    "71B"
+   ],
+   "top_sections": [
+    "71",
+    "71B",
+    "71A",
+    "70",
+    "192",
+    "73",
+    "72",
+    "74"
+   ],
+   "context_sections": [
+    "71",
+    "71B",
+    "71A",
+    "70",
+    "192",
+    "24"
+   ],
+   "sub_queries": [
+    "Can a loss under the head income from house property be set off against salary income?"
+   ],
+   "best_score": 0.999,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2601
+  },
+  {
+   "id": "q19",
+   "question": "Can business losses be carried forward to later years?",
+   "answerable": true,
+   "expected": [
+    "72"
+   ],
+   "top_sections": [
+    "73",
+    "79",
+    "72",
+    "78",
+    "73A",
+    "72A",
+    "71B",
+    "33A"
+   ],
+   "context_sections": [
+    "73",
+    "79",
+    "72",
+    "78",
+    "73A",
+    "72A",
+    "80IAC"
+   ],
+   "sub_queries": [
+    "Can business losses be carried forward to later years?"
+   ],
+   "best_score": 0.991,
+   "first_relevant_rank": 3,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3753
+  },
+  {
+   "id": "q20",
+   "question": "How is depreciation on plant and machinery allowed?",
+   "answerable": true,
+   "expected": [
+    "32"
+   ],
+   "top_sections": [
+    "32",
+    "80I",
+    "41",
+    "32AC",
+    "31",
+    "32AD",
+    "34",
+    "32AB"
+   ],
+   "context_sections": [
+    "32",
+    "80I",
+    "41",
+    "32AC",
+    "31",
+    "32AD",
+    "34",
+    "32AB",
+    "43",
+    "42"
+   ],
+   "sub_queries": [
+    "How is depreciation on plant and machinery allowed?"
+   ],
+   "best_score": 0.962,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3327
+  },
+  {
+   "id": "q21",
+   "question": "Is the income of a minor child added to the income of the parent?",
+   "answerable": true,
+   "expected": [
+    "64"
+   ],
+   "top_sections": [
+    "64",
+    "10",
+    "80GG",
+    "80CCD",
+    "27",
+    "80V",
+    "80U",
+    "222"
+   ],
+   "context_sections": [
+    "64",
+    "10",
+    "80GG",
+    "80CCD",
+    "80U"
+   ],
+   "sub_queries": [
+    "Is the income of a minor child added to the income of the parent?"
+   ],
+   "best_score": 0.951,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2835
+  },
+  {
+   "id": "q22",
+   "question": "What tax rebate is available to resident individuals with low income?",
+   "answerable": true,
+   "expected": [
+    "87A"
+   ],
+   "top_sections": [
+    "87A",
+    "88D",
+    "88C",
+    "88B",
+    "80U",
+    "87",
+    "88A",
+    "89A"
+   ],
+   "context_sections": [
+    "87A",
+    "88D",
+    "88C",
+    "88B",
+    "80U",
+    "115BAC"
+   ],
+   "sub_queries": [
+    "What tax rebate is available to resident individuals with low income?"
+   ],
+   "best_score": 0.945,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3048
+  },
+  {
+   "id": "q23",
+   "question": "What are the tax rates under the new tax regime for individuals?",
+   "answerable": true,
+   "expected": [
+    "115BAC"
+   ],
+   "top_sections": [
+    "115BAC",
+    "86",
+    "2",
+    "167B",
+    "115BAB",
+    "192",
+    "174",
+    "115BAE"
+   ],
+   "context_sections": [
+    "115BAC"
+   ],
+   "sub_queries": [
+    "What are the tax rates under the new tax regime for individuals?"
+   ],
+   "best_score": 0.043,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3500
+  },
+  {
+   "id": "q24",
+   "question": "What is the penalty for under-reporting of income?",
+   "answerable": true,
+   "expected": [
+    "270A"
+   ],
+   "top_sections": [
+    "270A",
+    "271FAA",
+    "272A",
+    "271F",
+    "271GB",
+    "271AAA"
+   ],
+   "context_sections": [
+    "270A",
+    "143",
+    "148"
+   ],
+   "sub_queries": [
+    "What is the penalty for under-reporting of income?"
+   ],
+   "best_score": 0.998,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2506
+  },
+  {
+   "id": "q25",
+   "question": "What is the time limit for issuing a notice for income escaping assessment?",
+   "answerable": true,
+   "expected": [
+    "149",
+    "148"
+   ],
+   "top_sections": [
+    "149",
+    "148A",
+    "148",
+    "151A",
+    "147",
+    "115WH",
+    "153",
+    "153B"
+   ],
+   "context_sections": [
+    "149",
+    "148A",
+    "148",
+    "151A",
+    "147",
+    "115WH",
+    "153",
+    "135A",
+    "151"
+   ],
+   "sub_queries": [
+    "What is the time limit for issuing a notice for income escaping assessment?"
+   ],
+   "best_score": 0.993,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2669
+  },
+  {
+   "id": "q26",
+   "question": "How does presumptive taxation work for small businesses?",
+   "answerable": true,
+   "expected": [
+    "44AD"
+   ],
+   "top_sections": [
+    "115JB",
+    "44AD",
+    "44ADA",
+    "43C",
+    "28",
+    "210",
+    "139",
+    "80HHA"
+   ],
+   "context_sections": [
+    "115JB",
+    "44AD",
+    "44ADA"
+   ],
+   "sub_queries": [
+    "How does presumptive taxation work for small businesses?"
+   ],
+   "best_score": 0.027,
+   "first_relevant_rank": 2,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3308
+  },
+  {
+   "id": "q27",
+   "question": "Is there presumptive taxation for professionals like doctors and lawyers?",
+   "answerable": true,
+   "expected": [
+    "44ADA"
+   ],
+   "top_sections": [
+    "44ADA",
+    "44A",
+    "288",
+    "28",
+    "30",
+    "44AA",
+    "44AD",
+    "194J"
+   ],
+   "context_sections": [
+    "44ADA",
+    "44A"
+   ],
+   "sub_queries": [
+    "Is there presumptive taxation for professionals like doctors and lawyers?"
+   ],
+   "best_score": 0.019,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3417
+  },
+  {
+   "id": "q28",
+   "question": "When is a tax audit of accounts compulsory?",
+   "answerable": true,
+   "expected": [
+    "44AB"
+   ],
+   "top_sections": [
+    "12A",
+    "44AB",
+    "271B",
+    "288",
+    "115VW",
+    "139",
+    "32AB",
+    "80IA"
+   ],
+   "context_sections": [
+    "12A",
+    "44AB",
+    "288",
+    "139"
+   ],
+   "sub_queries": [
+    "When is a tax audit of accounts compulsory?"
+   ],
+   "best_score": 0.12,
+   "first_relevant_rank": 2,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3332
+  },
+  {
+   "id": "q29",
+   "question": "Is interest on a savings bank account deductible?",
+   "answerable": true,
+   "expected": [
+    "80TTA"
+   ],
+   "top_sections": [
+    "80TTA",
+    "194A",
+    "193",
+    "80CCA",
+    "269T",
+    "80TTB",
+    "94B",
+    "40A"
+   ],
+   "context_sections": [
+    "80TTA",
+    "194A",
+    "193",
+    "80CCA",
+    "269T",
+    "80TTB",
+    "51"
+   ],
+   "sub_queries": [
+    "Is interest on a savings bank account deductible?"
+   ],
+   "best_score": 0.948,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3182
+  },
+  {
+   "id": "q30",
+   "question": "I do not receive house rent allowance. Can I claim a deduction for rent paid?",
+   "answerable": true,
+   "expected": [
+    "80GG"
+   ],
+   "top_sections": [
+    "25A",
+    "30",
+    "194IB",
+    "80GG",
+    "194I",
+    "40A",
+    "23",
+    "80EEA"
+   ],
+   "context_sections": [
+    "25A",
+    "30",
+    "194IB",
+    "80GG",
+    "194I",
+    "203A"
+   ],
+   "sub_queries": [
+    "I do not receive house rent allowance. Can I claim a deduction for rent paid?"
+   ],
+   "best_score": 0.3,
+   "first_relevant_rank": 4,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3276
+  },
+  {
+   "id": "q31",
+   "question": "Is house rent allowance exempt?",
+   "answerable": true,
+   "expected": [
+    "10"
+   ],
+   "top_sections": [
+    "10",
+    "194IB",
+    "30",
+    "80HHC",
+    "25",
+    "25A",
+    "23",
+    "80GG"
+   ],
+   "context_sections": [
+    "10",
+    "194IB",
+    "194I"
+   ],
+   "sub_queries": [
+    "Is house rent allowance exempt?"
+   ],
+   "best_score": 0.192,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 3591
+  },
+  {
+   "id": "q32",
+   "question": "Is a business expense paid in cash above a certain amount disallowed?",
+   "answerable": true,
+   "expected": [
+    "40A"
+   ],
+   "top_sections": [
+    "40A",
+    "44AB",
+    "194N",
+    "80GGA",
+    "35D",
+    "94B",
+    "80D",
+    "35AD"
+   ],
+   "context_sections": [
+    "40A",
+    "44AB",
+    "194N"
+   ],
+   "sub_queries": [
+    "Is a business expense paid in cash above a certain amount disallowed?"
+   ],
+   "best_score": 0.852,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2997
+  },
+  {
+   "id": "q33",
+   "question": "Can I accept a loan of a large amount in cash?",
+   "answerable": true,
+   "expected": [
+    "269SS"
+   ],
+   "top_sections": [
+    "271D",
+    "269SS",
+    "193",
+    "269T",
+    "194N",
+    "68",
+    "281",
+    "43CA"
+   ],
+   "context_sections": [
+    "271D",
+    "269SS"
+   ],
+   "sub_queries": [
+    "Can I accept a loan of a large amount in cash?"
+   ],
+   "best_score": 0.218,
+   "first_relevant_rank": 2,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2447
+  },
+  {
+   "id": "q34",
+   "question": "What does section 80C provide?",
+   "answerable": true,
+   "expected": [
+    "80C"
+   ],
+   "top_sections": [
+    "80C",
+    "54ED",
+    "80CCD",
+    "80CCE",
+    "80A",
+    "80CCA",
+    "80IC",
+    "10C"
+   ],
+   "context_sections": [
+    "80C",
+    "54ED",
+    "80CCD",
+    "80CCE",
+    "80A",
+    "80CCA",
+    "269UA"
+   ],
+   "sub_queries": [
+    "What does section 80C provide?"
+   ],
+   "best_score": 0.731,
+   "first_relevant_rank": 1,
+   "in_context": true,
+   "all_expected_in_context": true,
+   "latency_ms": 2603
+  },
+  {
+   "id": "q35",
+   "question": "What is the GST rate on restaurant services?",
+   "answerable": false,
+   "expected": [],
+   "top_sections": [
+    "115A",
+    "194O",
+    "80IB",
+    "194J",
+    "92CE",
+    "80HH",
+    "43A",
+    "ELEVENTHSCHEDULE"
+   ],
+   "context_sections": [
+    "115A",
+    "194O"
+   ],
+   "sub_queries": [
+    "What is the GST rate on restaurant services?"
+   ],
+   "best_score": 0.007,
+   "first_relevant_rank": null,
+   "in_context": false,
+   "all_expected_in_context": null,
+   "latency_ms": 3473
+  },
+  {
+   "id": "q36",
+   "question": "How much stamp duty is payable on registering a property in Maharashtra?",
+   "answerable": false,
+   "expected": [],
+   "top_sections": [
+    "56",
+    "43CA",
+    "49",
+    "45",
+    "50C",
+    "55",
+    "194IA",
+    "80EEA"
+   ],
+   "context_sections": [
+    "56",
+    "43CA"
+   ],
+   "sub_queries": [
+    "How much stamp duty is payable on registering a property in Maharashtra?"
+   ],
+   "best_score": 0.044,
+   "first_relevant_rank": null,
+   "in_context": false,
+   "all_expected_in_context": null,
+   "latency_ms": 3160
+  },
+  {
+   "id": "q37",
+   "question": "What is the punishment for theft under the Indian penal law?",
+   "answerable": false,
+   "expected": [],
+   "top_sections": [
+    "276B",
+    "276",
+    "276BB",
+    "278A",
+    "280",
+    "276C",
+    "245MA",
+    "278B"
+   ],
+   "context_sections": [
+    "276B",
+    "276",
+    "194S",
+    "194BA"
+   ],
+   "sub_queries": [
+    "What is the punishment for theft under the Indian penal law?"
+   ],
+   "best_score": 0.075,
+   "first_relevant_rank": null,
+   "in_context": false,
+   "all_expected_in_context": null,
+   "latency_ms": 3486
+  },
+  {
+   "id": "q38",
+   "question": "What is the basic customs duty on imported gold?",
+   "answerable": false,
+   "expected": [],
+   "top_sections": [
+    "28",
+    "2",
+    "49",
+    "47",
+    "115A",
+    "92B",
+    "271G",
+    "80HHC"
+   ],
+   "context_sections": [
+    "28",
+    "2"
+   ],
+   "sub_queries": [
+    "What is the basic customs duty on imported gold?"
+   ],
+   "best_score": 0.003,
+   "first_relevant_rank": null,
+   "in_context": false,
+   "all_expected_in_context": null,
+   "latency_ms": 3659
+  }
+ ]
+}

@@ -1,0 +1,281 @@
+/* Hallmark · shape: app screen · genre: editorial · theme: Almanac (by request) · redesign: full
+ * nav: a top bar with the wordmark and the live index status · signature: the Act's own text on the printed sheet, every quoted phrase marked and linked from the answer · states: empty, loading, error, insufficient, out of scope, full
+ * axes: mid/grotesk-sans/chromatic-magenta · posture: restrained · contrast: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H5 E4 S5 R5 V4 · weakest: P, a reference tool argues by exactness rather than voice; the sheet makes the statute the authority and the answer its gloss */
+/* Hallmark · dropped notice-title ·the edition and repeal notice moved onto the sheet's own head, and no script or test read that id */
+@import url("./tokens.css?v=2");
+@import url("./base.css?v=2");
+
+/* ---------- Page ---------- */
+
+body { color: var(--color-ink-2); }
+h1, h2, h3 { color: var(--color-ink); }
+h1 { font-size: var(--text-3xl); letter-spacing: -0.03em; }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); }
+
+.skip {
+  position: absolute; left: var(--space-md); top: calc(-1 * var(--space-4xl));
+  padding: var(--space-xs) var(--space-sm); background: var(--color-ink); color: var(--color-paper);
+  font: 500 var(--text-sm)/1 var(--font-display); z-index: var(--z-tooltip);
+}
+.skip:focus-visible { top: var(--space-md); }
+
+.num { font-family: var(--font-outlier); font-variant-numeric: tabular-nums; }
+
+/* ---------- Top bar ---------- */
+
+.bar { border-bottom: var(--rule-bar) solid var(--color-ink); }
+.bar__in {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: var(--space-xs) var(--space-xl); padding-block: var(--space-md);
+}
+.wordmark {
+  font: 600 var(--text-lg)/1.2 var(--font-display); letter-spacing: -0.02em;
+  color: var(--color-ink); text-decoration: none; white-space: nowrap;
+}
+.wordmark:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
+.bar__meta { font-size: var(--text-sm); color: var(--color-muted); }
+.bar__meta dl { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-lg); margin: 0; }
+.bar__meta dl div { display: flex; gap: var(--space-2xs); }
+.bar__meta dt { color: var(--color-muted); }
+.bar__meta dd { margin: 0; color: var(--color-ink-2); }
+
+/* ---------- Desk: the work column beside the sheet ---------- */
+
+.desk {
+  display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: var(--space-2xl); align-items: start; padding-block: var(--space-xl) var(--space-3xl);
+}
+/* Every nested grid gets a shrinkable track, or a wide table would widen the page on a phone */
+.desk__work, .ask, .ask__form, .result, .block, .sources, .source, .sheet { grid-template-columns: minmax(0, 1fr); min-width: 0; }
+.desk__work { display: grid; gap: var(--space-2xl); }
+
+/* ---------- The question ---------- */
+
+.ask { display: grid; gap: var(--space-md); }
+.ask__lede { max-width: 58ch; color: var(--color-muted); }
+.ask__form { display: grid; gap: var(--space-xs); margin-top: var(--space-xs); }
+.ask__form label { font: 500 var(--text-sm)/1.3 var(--font-body); color: var(--color-ink); }
+textarea {
+  width: 100%; min-height: 7.5rem; resize: vertical; padding: var(--space-sm);
+  background: var(--color-sheet); color: var(--color-ink);
+  border: var(--rule-hair) solid var(--color-muted); border-radius: var(--radius-card);
+  font: 400 var(--text-md)/1.5 var(--font-body);
+}
+textarea::placeholder { color: var(--color-muted); }
+textarea:hover { border-color: var(--color-ink-2); }
+textarea:focus-visible { outline: 2px solid var(--color-focus); outline-offset: -2px; }
+.hint { font-size: var(--text-sm); color: var(--color-muted); }
+.ask__row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm) var(--space-md); margin-top: var(--space-xs); }
+
+.status { display: inline-flex; align-items: center; gap: var(--space-xs); font-size: var(--text-sm); color: var(--color-muted); }
+.spinner {
+  inline-size: var(--space-md); block-size: var(--space-md); flex-shrink: 0;
+  border: var(--rule-bar) solid var(--color-rule); border-top-color: var(--color-accent); border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- Controls ---------- */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 40px;
+  padding: var(--space-xs) var(--space-lg); white-space: nowrap; cursor: pointer;
+  font: 500 var(--text-sm)/1 var(--font-display);
+  color: var(--color-ink); background: transparent;
+  border: var(--rule-hair) solid var(--color-ink); border-radius: var(--radius-pill);
+  transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+}
+.btn:hover { background: var(--color-paper-2); }
+.btn:active { background: var(--color-paper-3); }
+.btn:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.btn--primary { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-accent-ink); }
+.btn--primary:hover { background: var(--color-accent-2); border-color: var(--color-accent-2); }
+.btn--primary:active { background: var(--color-ink); border-color: var(--color-ink); }
+.btn:disabled, .btn:disabled:hover {
+  cursor: not-allowed; opacity: 0.55;
+  background: var(--color-paper-2); border-color: var(--color-rule); color: var(--color-muted);
+}
+@media (pointer: coarse) { .btn { min-height: 44px; } }
+
+/* Example questions: quiet text buttons, one per line, the action is the question itself */
+.samples { display: grid; gap: var(--space-2xs); margin-top: var(--space-xs); }
+.samples__label { font-size: var(--text-sm); color: var(--color-muted); }
+.samples ul { list-style: none; margin: 0; padding: 0; border-top: var(--rule-hair) solid var(--color-rule); }
+.samples li { border-bottom: var(--rule-hair) solid var(--color-rule); }
+.sample {
+  display: block; width: 100%; padding: var(--space-xs) 0; text-align: left; cursor: pointer;
+  background: transparent; border: 0; color: var(--color-ink-2);
+  font: 400 var(--text-md)/1.4 var(--font-body);
+  transition: color var(--dur-micro) var(--ease-out);
+}
+.sample:hover { color: var(--color-ink); text-decoration: underline; text-decoration-color: var(--color-accent); text-underline-offset: 0.15em; }
+.sample:active { color: var(--color-accent-2); }
+.sample:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.sample:disabled { cursor: not-allowed; opacity: 0.55; color: var(--color-muted); text-decoration: none; }
+
+/* ---------- Alerts ---------- */
+
+.alert {
+  margin-block: var(--space-sm); padding: var(--space-sm) var(--space-md);
+  background: var(--color-paper-2); border-top: var(--rule-bar) solid var(--color-rule-2);
+  font-size: var(--text-sm); color: var(--color-ink);
+}
+.alert.bad { border-top-color: var(--color-error); }
+.alert.warn { border-top-color: var(--color-accent); }
+.alert code { font-family: var(--font-outlier); font-size: var(--text-xs); }
+.alert .btn { margin-left: var(--space-sm); min-height: 32px; padding-inline: var(--space-md); }
+
+/* ---------- The answer ---------- */
+
+.result:empty { display: none; }
+.result { display: grid; gap: var(--space-xl); }
+.answer__head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: var(--space-xs) var(--space-lg); padding-bottom: var(--space-sm);
+  border-bottom: var(--rule-bar) solid var(--color-rule-2);
+}
+.answer__head h2 { font-size: var(--text-2xl); }
+.answer__facts { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-xs) var(--space-lg); font-size: var(--text-sm); color: var(--color-muted); }
+.state { font: 500 var(--text-sm)/1.3 var(--font-body); color: var(--color-ink); }
+.state--answered { color: var(--color-success); }
+.state--partial { color: var(--color-accent-2); }
+.state--insufficient, .state--out_of_scope, .state--error { color: var(--color-error); }
+
+.summary { font-size: var(--text-lg); line-height: 1.5; color: var(--color-ink); max-width: 62ch; }
+
+.block { display: grid; gap: var(--space-md); }
+.block > h3 { max-width: none; padding-bottom: var(--space-xs); border-bottom: var(--rule-hair) solid var(--color-rule); }
+
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-lg); counter-reset: point; }
+.point { display: grid; grid-template-columns: var(--space-xl) minmax(0, 1fr); column-gap: var(--space-sm); }
+.point::before {
+  counter-increment: point; content: counter(point);
+  font: 500 var(--text-sm)/1.6 var(--font-outlier); color: var(--color-muted); font-variant-numeric: tabular-nums;
+}
+.point > div { display: grid; gap: var(--space-xs); min-width: 0; }
+.point h4 { margin: 0; font: 600 var(--text-md)/1.3 var(--font-display); color: var(--color-ink); }
+.point p { max-width: 65ch; }
+.point__cites { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-md); margin-top: var(--space-2xs); }
+.point__note { font-size: var(--text-sm); color: var(--color-muted); max-width: 65ch; }
+
+/* A citation: the provision as a link to its marked words on the sheet, its page and its check */
+.cite {
+  display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0 var(--space-xs);
+  min-height: 32px; padding: var(--space-2xs) 0; cursor: pointer; text-align: left;
+  background: transparent; border: 0; color: var(--color-ink);
+  font: 500 var(--text-sm)/1.3 var(--font-display);
+}
+.cite__prov { text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+.cite:hover .cite__prov { text-decoration-thickness: 2px; }
+.cite:active .cite__prov { color: var(--color-accent-2); }
+.cite:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.cite__page { font-size: var(--text-xs); color: var(--color-muted); }
+.cite__check { font: 400 var(--text-xs)/1.3 var(--font-body); color: var(--color-success); }
+.cite--partial .cite__check { color: var(--color-accent-2); }
+.cite--failed .cite__check { color: var(--color-error); }
+
+/* ---------- Tables, set as the book sets them ---------- */
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+caption { text-align: left; padding-bottom: var(--space-xs); font-size: var(--text-sm); color: var(--color-muted); }
+thead th {
+  padding: var(--space-xs) var(--space-sm) var(--space-xs) 0; text-align: left; vertical-align: bottom; white-space: nowrap;
+  font: 500 var(--text-sm)/1.3 var(--font-body); color: var(--color-muted);
+  border-bottom: var(--rule-bar) solid var(--color-rule-2);
+}
+td { padding: var(--space-sm) var(--space-sm) var(--space-sm) 0; vertical-align: top; border-top: var(--rule-hair) solid var(--color-rule); }
+td.num, th.num { text-align: right; white-space: nowrap; font-family: var(--font-outlier); }
+td .quote { margin-top: var(--space-2xs); font-style: italic; color: var(--color-muted); max-width: 48ch; }
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3xs); }
+.checks li { display: flex; gap: var(--space-xs); }
+.checks .yes { color: var(--color-ink-2); }
+.checks .no { color: var(--color-error); }
+.checks b { font: 500 var(--text-xs)/1.5 var(--font-body); min-width: 2.5em; }
+
+/* ---------- Confidence: one figure and the four measurements behind it ---------- */
+
+.confidence { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--space-xl); align-items: start; }
+.confidence__score { display: grid; gap: var(--space-2xs); }
+.confidence__figure { font: 500 var(--text-3xl)/1 var(--font-outlier); letter-spacing: -0.04em; color: var(--color-ink); font-variant-numeric: tabular-nums; }
+.confidence__band { font-size: var(--text-sm); color: var(--color-muted); }
+.meter { display: block; height: var(--space-2xs); background: var(--color-paper-3); }
+.meter > span { display: block; height: 100%; background: var(--color-ink-2); transform-origin: left; }
+
+details { border-top: var(--rule-hair) solid var(--color-rule); padding-top: var(--space-sm); }
+summary { cursor: pointer; font: 500 var(--text-sm)/1.4 var(--font-display); color: var(--color-ink); }
+summary:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
+summary:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+details[open] > summary { margin-bottom: var(--space-sm); }
+details ul { margin: 0; padding-left: var(--space-lg); display: grid; gap: var(--space-xs); }
+.removed { padding: var(--space-xs) 0; border-top: var(--rule-hair) solid var(--color-rule); }
+.removed p + p { margin-top: var(--space-2xs); font-size: var(--text-sm); color: var(--color-muted); }
+
+.list { margin: 0; padding-left: var(--space-lg); display: grid; gap: var(--space-xs); max-width: 65ch; }
+.colophon { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: var(--space-2xs) var(--space-md); margin: 0; font-size: var(--text-xs); color: var(--color-muted); }
+.colophon dd { margin: 0; overflow-wrap: anywhere; }
+.copy { justify-self: start; }
+
+/* Loading: the shape of the answer that is coming */
+.skeleton { display: grid; gap: var(--space-sm); }
+.skeleton span { display: block; height: var(--space-sm); background: var(--color-paper-2); }
+.skeleton span:nth-child(1) { width: 40%; height: var(--space-lg); }
+.skeleton span:nth-child(2) { width: 92%; }
+.skeleton span:nth-child(3) { width: 85%; }
+.skeleton span:nth-child(4) { width: 60%; }
+
+/* ---------- The sheet: the Act as cited ---------- */
+
+.sheet {
+  position: sticky; top: var(--space-lg); max-height: calc(100dvh - var(--space-2xl)); overflow-y: auto;
+  background: var(--color-sheet); border-top: var(--rule-bar) solid var(--color-ink);
+  padding: var(--space-lg); display: grid; gap: var(--space-md); align-content: start;
+  scrollbar-gutter: stable;
+}
+.sheet__head { display: grid; gap: var(--space-2xs); padding-bottom: var(--space-sm); border-bottom: var(--rule-hair) solid var(--color-rule); }
+.sheet__head h2 { font-size: var(--text-xl); }
+.sheet__edition { font-size: var(--text-sm); color: var(--color-ink-2); }
+.sheet__note { font-size: var(--text-sm); color: var(--color-muted); max-width: 60ch; }
+.sources { display: grid; gap: var(--space-xl); }
+.empty { color: var(--color-muted); max-width: 48ch; }
+
+.source { display: grid; gap: var(--space-sm); scroll-margin-top: var(--space-md); padding-top: var(--space-sm); border-top: var(--rule-bar) solid var(--color-rule-2); }
+.source:focus-visible { outline: 2px solid var(--color-focus); outline-offset: var(--space-xs); }
+.source.is-current { border-top-color: var(--color-accent); }
+.source__head { display: grid; gap: var(--space-2xs); }
+.source__head h3 { font-size: var(--text-lg); }
+.source__title { font-size: var(--text-sm); color: var(--color-ink-2); }
+.source__meta { display: flex; flex-wrap: wrap; gap: var(--space-2xs) var(--space-lg); margin: 0; font-size: var(--text-xs); color: var(--color-muted); }
+.source__meta div { display: flex; gap: var(--space-2xs); }
+.source__meta dd { margin: 0; color: var(--color-ink-2); }
+.source__context { font-size: var(--text-sm); font-style: italic; color: var(--color-muted); }
+.statute { white-space: pre-wrap; font: 400 var(--text-md)/1.6 var(--font-body); color: var(--color-ink); max-width: 68ch; }
+.statute mark {
+  background: color-mix(in oklab, var(--color-accent) 8%, transparent); color: var(--color-ink);
+  text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 1px; text-underline-offset: 0.2em;
+}
+.source details .statute { font-size: var(--text-sm); color: var(--color-ink-2); }
+
+/* ---------- Footer ---------- */
+
+.foot { border-top: var(--rule-hair) solid var(--color-rule); background: var(--color-paper-2); }
+.foot__in { padding-block: var(--space-lg); }
+.foot p { font-size: var(--text-sm); color: var(--color-muted); max-width: 72ch; }
+
+/* ---------- Narrow screens: the sheet follows the answer ---------- */
+
+@media (max-width: 64rem) {
+  .desk { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
+  .sheet { position: static; max-height: none; overflow: visible; }
+}
+@media (max-width: 40rem) {
+  .confidence { grid-template-columns: minmax(0, 1fr); gap: var(--space-md); }
+  .sheet { padding: var(--space-md); }
+  /* Citation table: each row becomes a labelled block so the provision and its check stay in view */
+  table.stack thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  table.stack tr { display: grid; gap: var(--space-2xs); padding-block: var(--space-sm); border-top: var(--rule-hair) solid var(--color-rule); }
+  table.stack td { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: var(--space-sm); padding: 0; border: 0; text-align: left; }
+  table.stack td::before { content: attr(data-label); font: 500 var(--text-xs)/1.5 var(--font-body); color: var(--color-muted); }
+}

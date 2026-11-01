@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ask questions about the Income-tax Act, 1961 and get answers whose every citation is checked against the text of the Act.">
+  <title>Income-tax Act, 1961: question answering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2">
+</head>
+<body>
+  <a class="skip" href="#q">Skip to the question</a>
+
+  <header class="bar">
+    <div class="container bar__in">
+      <a class="wordmark" href="/" aria-label="Income-tax Act question answering, home">Income-tax Act, 1961</a>
+      <div id="edition" class="bar__meta" role="status" aria-live="polite">Checking the index…</div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="system-alert" role="status" aria-live="polite"></div>
+  </div>
+
+  <main class="container desk">
+    <div class="desk__work">
+      <section class="ask" aria-labelledby="ask-title">
+        <h1 id="ask-title">Ask the Act</h1>
+        <p class="ask__lede">Every answer cites the section, clause and PDF page it rests on, and each citation is checked against the Act’s own text.</p>
+        <form id="ask-form" class="ask__form">
+          <label for="q">Your question</label>
+          <textarea id="q" name="question" maxlength="2000" required rows="4"
+                    aria-describedby="q-hint"
+                    placeholder="I have rented out my flat and pay interest on a housing loan for it. What can I deduct?"></textarea>
+          <p id="q-hint" class="hint">Press Ctrl+Enter to ask. Questions about other laws, such as GST or stamp duty, are declined.</p>
+          <div class="ask__row">
+            <button type="submit" class="btn btn--primary" id="ask">Ask</button>
+            <span id="status" class="status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+        <div class="samples" id="samples" aria-label="Example questions"></div>
+      </section>
+
+      <section id="result" class="result" aria-live="polite" aria-busy="false" aria-label="Answer"></section>
+    </div>
+
+    <aside class="desk__sheet sheet" aria-labelledby="sheet-title">
+      <div class="sheet__head">
+        <h2 id="sheet-title">The Act, as cited</h2>
+        <p class="sheet__edition">Income-tax Act, 1961, as amended by the Finance Act, 2026</p>
+      </div>
+      <p class="sheet__note">The 1961 Act was repealed from 1 April 2026 by the Income-tax Act, 2025. It still governs earlier years and pending proceedings; for income earned from 1 April 2026, check the 2025 Act, where section numbers and some rules differ.</p>
+      <div id="sources" class="sources">
+        <p class="empty">Provisions retrieved for your question appear here, with the words each citation quotes marked in the text of the Act.</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__in">
+      <p>Answers are written only from provisions retrieved from the Act, and every citation is checked against that text: the provision was retrieved, the sub-section or clause appears in it, and the quoted words match. This is legal information, not legal advice; read the cited provisions before relying on an answer.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js?v=2"></script>
+</body>
+</html>

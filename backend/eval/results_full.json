@@ -1,0 +1,824 @@
+{
+ "metrics": {
+  "mode": "full",
+  "answerable_questions": 34,
+  "unanswerable_questions": 4,
+  "answered_or_partial_on_answerable": 0.824,
+  "expected_section_cited": 0.824,
+  "citation_validity_rate": 0.986,
+  "untraceable_citation_rate": 0.0,
+  "statements_removed_by_verifier": 0,
+  "correct_refusal_on_unanswerable": 1.0,
+  "exceptions": 0,
+  "median_confidence_answerable": 95.5,
+  "median_latency_ms": 27813.0
+ },
+ "rows": [
+  {
+   "id": "q01",
+   "question": "I own a residential property that I have rented out. Can I claim a 30% deduction on the annual value of the property? I also have a housing loan on this property. Can I claim a deduction for the interest paid on the loan? Which sections of the Income-tax Act apply?",
+   "answerable": true,
+   "expected": [
+    "24",
+    "23"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "22",
+    "23",
+    "24",
+    "80EE",
+    "80EEA"
+   ],
+   "expected_cited": true,
+   "citations": 19,
+   "valid_citations": 19,
+   "untraceable_citations": 0,
+   "statements": 10,
+   "removed_statements": 0,
+   "confidence": 99,
+   "latency_ms": 28796,
+   "summary": "You can claim a standard deduction of 30% on the annual value of your rented residential property. You can also claim a deduction for the interest paid on a housing loan taken for the property. The sections that apply for these deductions are Section 24(a) for the 30% standard deduction and Section 24(b) for interest on borrowed capital."
+  },
+  {
+   "id": "q02",
+   "question": "What deductions are available for life insurance premium and provident fund contributions?",
+   "answerable": true,
+   "expected": [
+    "80C"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "80C",
+    "80CCC"
+   ],
+   "expected_cited": true,
+   "citations": 10,
+   "valid_citations": 9,
+   "untraceable_citations": 0,
+   "statements": 9,
+   "removed_statements": 0,
+   "confidence": 97,
+   "latency_ms": 107863,
+   "summary": "Deductions for life insurance premiums and provident fund contributions are available under Section 80C for individuals and Hindu undivided families, up to an aggregate limit of one hundred and fifty thousand rupees. Life insurance premiums paid for the assessee, their spouse, or children (or any member in the case of a HUF) are eligible, provided certain conditions regarding policy termination are met. Contributions to specified provident funds, including those under the Provident Funds Act, 1925, Central Government notified funds, and recognised provident funds, are also deductible, excluding loan repayments. Additionally, individuals may claim a deduction under Section 80CCC for contributions to certain annuity plans of the Life Insurance Corporation of India or other insurers for receiving a pension, also up to one hundred and fifty thousand rupees."
+  },
+  {
+   "id": "q03",
+   "question": "Is agricultural income taxable?",
+   "answerable": true,
+   "expected": [
+    "10",
+    "2"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "10",
+    "2",
+    "209",
+    "91"
+   ],
+   "expected_cited": true,
+   "citations": 5,
+   "valid_citations": 5,
+   "untraceable_citations": 0,
+   "statements": 5,
+   "removed_statements": 0,
+   "confidence": 95,
+   "latency_ms": 22139,
+   "summary": "Generally, agricultural income is not included in the total income for tax computation in India, provided it meets the definition of agricultural income. However, capital gains from the transfer of agricultural land may be exempt if specific conditions are fulfilled. While not directly taxable, net agricultural income may be taken into account for the purpose of computing advance tax, if specified by the relevant Finance Act. Additionally, relief from double taxation may be available for agricultural income taxed in Pakistan if it is also liable to tax under the Indian Act."
+  },
+  {
+   "id": "q04",
+   "question": "How is the residential status of an individual determined?",
+   "answerable": true,
+   "expected": [
+    "6"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "6"
+   ],
+   "expected_cited": true,
+   "citations": 11,
+   "valid_citations": 11,
+   "untraceable_citations": 0,
+   "statements": 10,
+   "removed_statements": 0,
+   "confidence": 92,
+   "latency_ms": 24863,
+   "summary": "An individual's residential status in India is determined by their physical presence in India during the relevant previous year and preceding years, with specific day counts for 'resident' status. Special rules apply to citizens of India or persons of Indian origin, particularly those leaving India for employment or as crew, or those visiting India, which modify the required days of stay. A citizen of India with high income from non-foreign sources may be 'deemed to be resident' if not liable to tax elsewhere, unless already resident under general rules. An individual is 'not ordinarily resident' if they have been a non-resident for a significant period in prior years, or if they meet specific conditions related to their stay and income as a citizen or person of Indian origin."
+  },
+  {
+   "id": "q05",
+   "question": "Can I claim a deduction for health insurance premium paid for my parents?",
+   "answerable": true,
+   "expected": [
+    "80D"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "80D"
+   ],
+   "expected_cited": true,
+   "citations": 10,
+   "valid_citations": 10,
+   "untraceable_citations": 0,
+   "statements": 7,
+   "removed_statements": 0,
+   "confidence": 88,
+   "latency_ms": 16528,
+   "summary": "Yes, as an individual, you can claim a deduction under Section 80D for health insurance premiums paid for your parents. The deduction limit for parents' health insurance premium and preventive health check-up is twenty-five thousand rupees, which increases to fifty thousand rupees if your parent is a senior citizen. The payment for health insurance premiums must be made by any mode other than cash. An overall aggregate limit of fifty thousand rupees applies to the combined deduction for parents' health insurance and medical expenditure."
+  },
+  {
+   "id": "q06",
+   "question": "Is interest paid on an education loan deductible?",
+   "answerable": true,
+   "expected": [
+    "80E"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "80E"
+   ],
+   "expected_cited": true,
+   "citations": 9,
+   "valid_citations": 9,
+   "untraceable_citations": 0,
+   "statements": 9,
+   "removed_statements": 0,
+   "confidence": 98,
+   "latency_ms": 18128,
+   "summary": "Interest paid on an education loan is deductible for an individual, provided the loan is taken from a financial institution or an approved charitable institution for their own higher education or that of a relative."
+  },
+  {
+   "id": "q07",
+   "question": "What deduction is allowed for donations to charitable institutions and funds?",
+   "answerable": true,
+   "expected": [
+    "80G"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "80G"
+   ],
+   "expected_cited": true,
+   "citations": 13,
+   "valid_citations": 13,
+   "untraceable_citations": 0,
+   "statements": 10,
+   "removed_statements": 0,
+   "confidence": 98,
+   "latency_ms": 29037,
+   "summary": "A deduction is allowed under Section 80G for donations made to certain charitable institutions and funds, provided the donation is a sum of money and the institution meets specific conditions."
+  },
+  {
+   "id": "q08",
+   "question": "If I sell my residential house and buy another house with the long-term capital gain, is the gain exempt?",
+   "answerable": true,
+   "expected": [
+    "54"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "45",
+    "54"
+   ],
+   "expected_cited": true,
+   "citations": 8,
+   "valid_citations": 8,
+   "untraceable_citations": 0,
+   "statements": 7,
+   "removed_statements": 0,
+   "confidence": 94,
+   "latency_ms": 18291,
+   "summary": "Yes, the long-term capital gain from selling your residential house can be exempt if you purchase or construct another residential house in India within specified timeframes. The exemption applies fully if the cost of the new house is equal to or more than the capital gain; otherwise, a partial exemption applies. You may have the option to purchase or construct two residential houses if the capital gain does not exceed two crore rupees."
+  },
+  {
+   "id": "q09",
+   "question": "What is the due date for filing a return of income?",
+   "answerable": true,
+   "expected": [
+    "139"
+   ],
+   "status": "partial",
+   "cited_sections": [
+    "115WD",
+    "139",
+    "6"
+   ],
+   "expected_cited": true,
+   "citations": 9,
+   "valid_citations": 9,
+   "untraceable_citations": 0,
+   "statements": 5,
+   "removed_statements": 0,
+   "confidence": 78,
+   "latency_ms": 16858,
+   "summary": "The due date for furnishing a return of income under Section 139(1) applies to companies, firms, and other persons whose income exceeds the maximum amount not chargeable to tax, as well as certain residents with foreign assets or accounts. For the specific return of fringe benefits under Section 115WD(1), the due date is September 30th of the assessment year for companies and audited persons, and July 31st for other employers. The general definition of 'due date' for Section 139(1) refers to a table that specifies dates based on the type of person and conditions, but the complete table is not provided in the excerpts."
+  },
+  {
+   "id": "q10",
+   "question": "Who is liable to pay advance tax?",
+   "answerable": true,
+   "expected": [
+    "208",
+    "207"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "115WJ",
+    "156",
+    "208",
+    "209",
+    "210",
+    "211"
+   ],
+   "expected_cited": true,
+   "citations": 10,
+   "valid_citations": 10,
+   "untraceable_citations": 0,
+   "statements": 7,
+   "removed_statements": 0,
+   "confidence": 91,
+   "latency_ms": 17401,
+   "summary": "Any assessee is liable to pay advance tax if the amount of tax payable is ten thousand rupees or more, which they must pay of their own accord. The Assessing Officer can also require a previously assessed person to pay advance tax if they deem them liable. There is also a specific liability for advance tax on current fringe benefits."
+  },
+  {
+   "id": "q11",
+   "question": "What interest is charged for default in payment of advance tax?",
+   "answerable": true,
+   "expected": [
+    "234B",
+    "234C"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "234B"
+   ],
+   "expected_cited": true,
+   "citations": 10,
+   "valid_citations": 10,
+   "untraceable_citations": 0,
+   "statements": 9,
+   "removed_statements": 0,
+   "confidence": 88,
+   "latency_ms": 23927,
+   "summary": "The verified provisions relevant to this question are: General Interest for Default in Advance Tax (Section 234B(1)); Definition of Assessed Tax (Section 234B(1), Explanation 1); Exclusions from Tax on Total Income for Assessed Tax (Section 234B(1), Explanation 3); Interest on Tax Paid Before Assessment (Section 234B(2)); Interest on Increased Income Due to Reassessment or Recomputation (Section 234B(3)); Interest for Settlement Commission Cases (Section 234B(2A)(a)); Interest for Increased Income by Settlement Commission Order (Section 234B(2A)(b)); Adjustment of Interest by Subsequent Orders (Section 234B(4), Section 234B(2A)(c)); Applicability of Section 234B (Section 234B(5)). See the cited points below."
+  },
+  {
+   "id": "q12",
+   "question": "Is my employer required to deduct tax at source on salary?",
+   "answerable": true,
+   "expected": [
+    "192"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "16",
+    "192",
+    "FOURTHSCHEDULE"
+   ],
+   "expected_cited": true,
+   "citations": 14,
+   "valid_citations": 14,
+   "untraceable_citations": 0,
+   "statements": 6,
+   "removed_statements": 0,
+   "confidence": 97,
+   "latency_ms": 51001,
+   "summary": "Yes, your employer is generally required to deduct income-tax at source on the estimated income chargeable under the head \"Salaries\" at the time of payment, based on the average tax rates in force for the financial year. To determine the correct amount, the employer must consider various deductions from salary income and obtain evidence for claims from the employee. Specific rules apply for perquisites, multiple employers, and certain payments from provident or superannuation funds."
+  },
+  {
+   "id": "q13",
+   "question": "Is tax deducted at source on rent payments?",
+   "answerable": true,
+   "expected": [
+    "194I"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "190",
+    "194I",
+    "194IB"
+   ],
+   "expected_cited": true,
+   "citations": 11,
+   "valid_citations": 11,
+   "untraceable_citations": 0,
+   "statements": 10,
+   "removed_statements": 0,
+   "confidence": 100,
+   "latency_ms": 26830,
+   "summary": "Yes, tax is deducted at source (TDS) on rent payments under specific conditions, depending on who is paying the rent and the amount involved. Individuals and Hindu Undivided Families (HUFs) must deduct tax at 2% if the monthly rent exceeds fifty thousand rupees, with the deduction occurring at the end of the tenancy or previous year."
+  },
+  {
+   "id": "q14",
+   "question": "Is a gift of money received from a relative taxable?",
+   "answerable": true,
+   "expected": [
+    "56"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "56"
+   ],
+   "expected_cited": true,
+   "citations": 3,
+   "valid_citations": 3,
+   "untraceable_citations": 0,
+   "statements": 2,
+   "removed_statements": 0,
+   "confidence": 79,
+   "latency_ms": 97850,
+   "summary": "A gift of money received from a relative is not taxable under the provisions governing gifts. To qualify for this exemption, the payer must fall within the statutory definition of 'relative', which includes specific family members such as a spouse, siblings, lineal ascendants, lineal descendants, and their spouses."
+  },
+  {
+   "id": "q15",
+   "question": "Is gratuity received on retirement exempt from tax?",
+   "answerable": true,
+   "expected": [
+    "10"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "10"
+   ],
+   "expected_cited": true,
+   "citations": 8,
+   "valid_citations": 7,
+   "untraceable_citations": 0,
+   "statements": 7,
+   "removed_statements": 0,
+   "confidence": 97,
+   "latency_ms": 20859,
+   "summary": "Gratuity received on retirement is exempt from tax under Section 10(10) of the Income-tax Act, 1961, subject to specific conditions and limits. The exemption applies fully to death-cum-retirement gratuities for government employees and those under similar schemes. Other gratuities received on retirement are exempt up to one-half month's salary for each year of completed service, based on average salary of the preceding ten months, subject to a Central Government specified limit, with rules for multiple employers and previous exemptions."
+  },
+  {
+   "id": "q16",
+   "question": "Is there a standard deduction from salary income?",
+   "answerable": true,
+   "expected": [
+    "16"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "16"
+   ],
+   "expected_cited": true,
+   "citations": 2,
+   "valid_citations": 2,
+   "untraceable_citations": 0,
+   "statements": 2,
+   "removed_statements": 0,
+   "confidence": 100,
+   "latency_ms": 9318,
+   "summary": "Yes, a standard deduction is available from salary income."
+  },
+  {
+   "id": "q17",
+   "question": "What is the definition of a capital asset?",
+   "answerable": true,
+   "expected": [
+    "2"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "2"
+   ],
+   "expected_cited": true,
+   "citations": 6,
+   "valid_citations": 6,
+   "untraceable_citations": 0,
+   "statements": 6,
+   "removed_statements": 0,
+   "confidence": 97,
+   "latency_ms": 30663,
+   "summary": "A capital asset means property of any kind held by an assessee, non-exempt unit linked insurance policies, and certain securities held by Foreign Institutional Investors or investment funds. It excludes business stock-in-trade or raw materials, personal effects (excluding items like jewellery, artwork, and sculptures), and specified rural agricultural land in India."
+  },
+  {
+   "id": "q18",
+   "question": "Can a loss under the head income from house property be set off against salary income?",
+   "answerable": true,
+   "expected": [
+    "71",
+    "71B"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "192",
+    "71",
+    "71B"
+   ],
+   "expected_cited": true,
+   "citations": 6,
+   "valid_citations": 6,
+   "untraceable_citations": 0,
+   "statements": 4,
+   "removed_statements": 0,
+   "confidence": 95,
+   "latency_ms": 29568,
+   "summary": "Yes, a loss under the head 'Income from house property' can be set off against salary income, but the set-off is restricted to a maximum of two lakh rupees in an assessment year. Salaried individuals may report this loss to their employer so it can be considered for salary tax deduction at source. Any house property loss exceeding two lakh rupees that remains unabsorbed can be carried forward for up to eight assessment years, but in those subsequent years, it can only be set off against house property income."
+  },
+  {
+   "id": "q19",
+   "question": "Can business losses be carried forward to later years?",
+   "answerable": true,
+   "expected": [
+    "72"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "72",
+    "73",
+    "73A",
+    "78",
+    "79"
+   ],
+   "expected_cited": true,
+   "citations": 9,
+   "valid_citations": 9,
+   "untraceable_citations": 0,
+   "statements": 5,
+   "removed_statements": 0,
+   "confidence": 100,
+   "latency_ms": 34812,
+   "summary": "General business losses can be carried forward to subsequent years to be set off against business profits for up to eight assessment years. Carry forward of losses may be restricted in cases of succession of business or changes in shareholding of closely held companies."
+  },
+  {
+   "id": "q20",
+   "question": "How is depreciation on plant and machinery allowed?",
+   "answerable": true,
+   "expected": [
+    "32"
+   ],
+   "status": "error",
+   "cited_sections": [],
+   "expected_cited": false,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 37763,
+   "summary": "The language model could not be reached. The retrieved provisions are shown below."
+  },
+  {
+   "id": "q21",
+   "question": "Is the income of a minor child added to the income of the parent?",
+   "answerable": true,
+   "expected": [
+    "64"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "10",
+    "64"
+   ],
+   "expected_cited": true,
+   "citations": 5,
+   "valid_citations": 5,
+   "untraceable_citations": 0,
+   "statements": 4,
+   "removed_statements": 0,
+   "confidence": 95,
+   "latency_ms": 24731,
+   "summary": "The income of a minor child is generally included in the total income of the parent. When included, the income is added to the parent with the higher total income (or the maintaining parent if unmarried/separated), and an exemption up to \u20b91,500 per minor child is allowed."
+  },
+  {
+   "id": "q22",
+   "question": "What tax rebate is available to resident individuals with low income?",
+   "answerable": true,
+   "expected": [
+    "87A"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "87",
+    "87A"
+   ],
+   "expected_cited": true,
+   "citations": 4,
+   "valid_citations": 4,
+   "untraceable_citations": 0,
+   "statements": 4,
+   "removed_statements": 0,
+   "confidence": 96,
+   "latency_ms": 42021,
+   "summary": "Resident individuals with a total income up to five hundred thousand rupees are eligible for a tax rebate up to twelve thousand five hundred rupees (or 100% of the tax, whichever is less). In no case can the rebate exceed the total income-tax payable before applying Chapter VIII deductions."
+  },
+  {
+   "id": "q23",
+   "question": "What are the tax rates under the new tax regime for individuals?",
+   "answerable": true,
+   "expected": [
+    "115BAC"
+   ],
+   "status": "partial",
+   "cited_sections": [
+    "115BAC"
+   ],
+   "expected_cited": true,
+   "citations": 4,
+   "valid_citations": 4,
+   "untraceable_citations": 0,
+   "statements": 3,
+   "removed_statements": 0,
+   "confidence": 80,
+   "latency_ms": 50442,
+   "summary": "For the assessment year beginning April 1, 2024, tax under the new regime for individuals is charged at slab rates ranging from Nil (up to Rs. 3,00,000) to 30% (above Rs. 15,00,000). For assessment years 2021-22 to 2023-24, optional slab rates applied ranging from Nil up to Rs. 2,50,000 to 20% for income between Rs. 10,00,001 and Rs. 12,50,000."
+  },
+  {
+   "id": "q24",
+   "question": "What is the penalty for under-reporting of income?",
+   "answerable": true,
+   "expected": [
+    "270A"
+   ],
+   "status": "error",
+   "cited_sections": [],
+   "expected_cited": false,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 20657,
+   "summary": "The language model could not be reached. The retrieved provisions are shown below."
+  },
+  {
+   "id": "q25",
+   "question": "What is the time limit for issuing a notice for income escaping assessment?",
+   "answerable": true,
+   "expected": [
+    "149",
+    "148"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "149"
+   ],
+   "expected_cited": true,
+   "citations": 4,
+   "valid_citations": 4,
+   "untraceable_citations": 0,
+   "statements": 3,
+   "removed_statements": 0,
+   "confidence": 100,
+   "latency_ms": 38966,
+   "summary": "The time limit extends up to five years and three months if the Assessing Officer holds evidence showing that the escaped income amounts to or is likely to amount to fifty lakh rupees or more."
+  },
+  {
+   "id": "q26",
+   "question": "How does presumptive taxation work for small businesses?",
+   "answerable": true,
+   "expected": [
+    "44AD"
+   ],
+   "status": "error",
+   "cited_sections": [],
+   "expected_cited": false,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 40714,
+   "summary": "The language model could not be reached. The retrieved provisions are shown below."
+  },
+  {
+   "id": "q27",
+   "question": "Is there presumptive taxation for professionals like doctors and lawyers?",
+   "answerable": true,
+   "expected": [
+    "44ADA"
+   ],
+   "status": "partial",
+   "cited_sections": [
+    "44AD",
+    "44ADA"
+   ],
+   "expected_cited": true,
+   "citations": 4,
+   "valid_citations": 4,
+   "untraceable_citations": 0,
+   "statements": 4,
+   "removed_statements": 0,
+   "confidence": 77,
+   "latency_ms": 36410,
+   "summary": "Presumptive taxation is available for resident individual and non-LLP partnership professionals under Section 44ADA, where 50% of gross receipts is deemed as income. The standard gross receipt limit is 50 lakh rupees, which increases to 75 lakh rupees if cash receipts do not exceed 5%. Section 44AD explicitly excludes professionals, and claiming lower profits under Section 44ADA requires maintaining books of account and getting an audit done."
+  },
+  {
+   "id": "q28",
+   "question": "When is a tax audit of accounts compulsory?",
+   "answerable": true,
+   "expected": [
+    "44AB"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "271B",
+    "44AB"
+   ],
+   "expected_cited": true,
+   "citations": 7,
+   "valid_citations": 7,
+   "untraceable_citations": 0,
+   "statements": 6,
+   "removed_statements": 0,
+   "confidence": 91,
+   "latency_ms": 49038,
+   "summary": "Tax audit of accounts is compulsory under Section 44AB for businesses with turnover exceeding 1 crore rupees (or 10 crore rupees under low cash-usage conditions) and professionals with gross receipts exceeding 50 lakh rupees. It is also mandatory when taxpayers under presumptive taxation schemes claim lower profits than prescribed and their income exceeds the basic exemption limit."
+  },
+  {
+   "id": "q29",
+   "question": "Is interest on a savings bank account deductible?",
+   "answerable": true,
+   "expected": [
+    "80TTA"
+   ],
+   "status": "error",
+   "cited_sections": [],
+   "expected_cited": false,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 34226,
+   "summary": "The language model could not be reached. The retrieved provisions are shown below."
+  },
+  {
+   "id": "q30",
+   "question": "I do not receive house rent allowance. Can I claim a deduction for rent paid?",
+   "answerable": true,
+   "expected": [
+    "80GG"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "80GG"
+   ],
+   "expected_cited": true,
+   "citations": 4,
+   "valid_citations": 4,
+   "untraceable_citations": 0,
+   "statements": 4,
+   "removed_statements": 0,
+   "confidence": 97,
+   "latency_ms": 49383,
+   "summary": "If you do not receive house rent allowance, you can claim a deduction under Section 80GG for rent paid for your residence in excess of 10% of your total income, up to a maximum of \u20b95,000 per month or 25% of your total income, whichever is less. This deduction is calculated on total income before Section 80GG deductions and is subject to conditions, including not owning residential accommodation at your place of residence, work, or business."
+  },
+  {
+   "id": "q31",
+   "question": "Is house rent allowance exempt?",
+   "answerable": true,
+   "expected": [
+    "10"
+   ],
+   "status": "error",
+   "cited_sections": [],
+   "expected_cited": false,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 39673,
+   "summary": "The language model could not be reached. The retrieved provisions are shown below."
+  },
+  {
+   "id": "q32",
+   "question": "Is a business expense paid in cash above a certain amount disallowed?",
+   "answerable": true,
+   "expected": [
+    "40A"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "40A"
+   ],
+   "expected_cited": true,
+   "citations": 4,
+   "valid_citations": 4,
+   "untraceable_citations": 0,
+   "statements": 4,
+   "removed_statements": 0,
+   "confidence": 100,
+   "latency_ms": 24036,
+   "summary": "Yes, a business expenditure is disallowed as a deduction if the payment or aggregate payments made to a person in a day in cash or non-prescribed modes exceed ten thousand rupees. The limit is increased to thirty-five thousand rupees for payments made for plying, hiring, or leasing goods carriages, and specific exceptions may apply under prescribed circumstances. Additionally, if a deduction was previously allowed for an incurred liability, any subsequent cash payment exceeding ten thousand rupees is treated as taxable business income in the year of payment."
+  },
+  {
+   "id": "q33",
+   "question": "Can I accept a loan of a large amount in cash?",
+   "answerable": true,
+   "expected": [
+    "269SS"
+   ],
+   "status": "answered",
+   "cited_sections": [
+    "269SS"
+   ],
+   "expected_cited": true,
+   "citations": 5,
+   "valid_citations": 4,
+   "untraceable_citations": 0,
+   "statements": 4,
+   "removed_statements": 0,
+   "confidence": 95,
+   "latency_ms": 30117,
+   "summary": "You cannot accept a loan in cash if the aggregate amount is twenty thousand rupees or more, as it must be taken through specified banking or electronic modes. Exceptions exist for government entities, banks, specific co-operative societies, or transactions where both parties earn only non-taxable agricultural income."
+  },
+  {
+   "id": "q34",
+   "question": "What does section 80C provide?",
+   "answerable": true,
+   "expected": [
+    "80C"
+   ],
+   "status": "error",
+   "cited_sections": [],
+   "expected_cited": false,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 11059,
+   "summary": "The language model could not be reached. The retrieved provisions are shown below."
+  },
+  {
+   "id": "q35",
+   "question": "What is the GST rate on restaurant services?",
+   "answerable": false,
+   "expected": [],
+   "status": "insufficient",
+   "cited_sections": [],
+   "expected_cited": null,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 2920,
+   "summary": "No provision of the Act retrieved for this question is relevant enough to support an answer. The closest provisions found are listed below for reference, but they should not be read as answering the question."
+  },
+  {
+   "id": "q36",
+   "question": "How much stamp duty is payable on registering a property in Maharashtra?",
+   "answerable": false,
+   "expected": [],
+   "status": "insufficient",
+   "cited_sections": [],
+   "expected_cited": null,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 5160,
+   "summary": "No provision of the Act retrieved for this question is relevant enough to support an answer. The closest provisions found are listed below for reference, but they should not be read as answering the question."
+  },
+  {
+   "id": "q37",
+   "question": "What is the punishment for theft under the Indian penal law?",
+   "answerable": false,
+   "expected": [],
+   "status": "insufficient",
+   "cited_sections": [],
+   "expected_cited": null,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 9776,
+   "summary": ""
+  },
+  {
+   "id": "q38",
+   "question": "What is the basic customs duty on imported gold?",
+   "answerable": false,
+   "expected": [],
+   "status": "out_of_scope",
+   "cited_sections": [],
+   "expected_cited": null,
+   "citations": 0,
+   "valid_citations": 0,
+   "untraceable_citations": 0,
+   "statements": 0,
+   "removed_statements": 0,
+   "confidence": null,
+   "latency_ms": 4126,
+   "summary": "This question does not appear to concern the Income-tax Act, 1961, so it cannot be answered from this source."
+  }
+ ]
+}
