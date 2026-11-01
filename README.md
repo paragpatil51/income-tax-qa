@@ -5,7 +5,28 @@ Ask a question in plain English about the Income-tax Act, 1961. The application 
 > **Edition used:** *Income-tax Act, 1961 [43 of 1961], as amended by the Finance Act, 2026*. This is the CBDT consolidated text published on [incometaxindia.gov.in](https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_1961_as_amended_by_fa_act_2026-1-pdf). The PDF has 1,098 pages and was created on 4 April 2026; its SHA-256 is `ecdd7ea6…f30db2fc`, recorded in full in `backend/data/processed/ingest_report.json`.
 > **Important:** the 1961 Act was **repealed with effect from 1 April 2026** by the Income-tax Act, 2025. See [Edition and applicability](#edition-and-applicability).
 
-**Contents:** [Structure](#project-structure) · [A. Overview](#a-project-overview) · [B. Technology stack](#b-technology-stack) · [C. Architecture](#c-architecture-and-approach) · [D. Setup](#d-setup-and-execution) · [E. Testing and limitations](#e-testing-and-limitations) · [Design decisions](docs/design_decisions.md) · [Sample results](docs/sample_results.md)
+**Contents:** [Screenshots](#screenshots) · [Structure](#project-structure) · [A. Overview](#a-project-overview) · [B. Technology stack](#b-technology-stack) · [C. Architecture](#c-architecture-and-approach) · [D. Setup](#d-setup-and-execution) · [E. Testing and limitations](#e-testing-and-limitations) · [Design decisions](docs/design_decisions.md) · [Sample results](docs/sample_results.md)
+
+---
+
+## Screenshots
+
+**The brief's example question.** The answer is on the left: each statement carries its provision, PDF page and verification state. On the right, the sheet shows the Act's own text, with the words each citation quotes marked.
+
+![The example question answered with verified citations to Sections 22, 23 and 24, beside the statute text with the quoted words marked](docs/screenshots/overview-answer.png)
+
+**A question outside the Act is refused.** Nothing is invented: the closest provisions are shown only for reference.
+
+![A GST question marked as insufficient support, with no answer generated](docs/screenshots/overview-refusal.png)
+
+Full-page captures, including the citation table, the confidence breakdown and every retrieved provision:
+
+| Question | Screenshot |
+|---|---|
+| The brief's example: rented property, 30% deduction and housing-loan interest | [result-1.png](docs/screenshots/result-1.png) |
+| Life insurance premium and provident fund contributions (Chapter VI-A) | [result-2.png](docs/screenshots/result-2.png) |
+| Is agricultural income taxable? | [result-3.png](docs/screenshots/result-3.png) |
+| GST rate on restaurant services (out of scope, refused) | [result-4.png](docs/screenshots/result-4.png) |
 
 ---
 
