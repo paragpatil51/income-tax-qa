@@ -44,7 +44,7 @@ income-tax-qa/
 │   │                                 make_colab_bundle.py, import_index.py
 │   ├── tests/                        pytest suite (parser, decoder, retrieval, verifier, API, LLM client)
 │   ├── eval/                         questions.jsonl + generated results_*.md / .json
-│   ├── data/                         raw/ (PDF, not committed), processed/, index/, cache/ (generated)
+│   ├── data/                         raw/ (the official PDF), processed/, index/, cache/ (generated)
 │   ├── requirements.txt  pyproject.toml  .env.example
 ├── frontend/                         Static web UI, no build step
 │   ├── index.html
@@ -274,10 +274,10 @@ Set `GEMINI_API_KEY` in `backend/.env`. Every setting and its default is documen
 | `EMBEDDING_BACKEND` | `local` (ONNX on CPU, default) or `gemini` |
 | `MIN_RELEVANCE` | Abstention threshold on reranker relevance (default 0.10) |
 
-### Get the PDF
-Download the official PDF in a browser; the site blocks scripted downloads:
+### The PDF
+The official PDF is included in the repo at `backend/data/raw/income-tax-act-1961-as-amended-by-finance-act-2026.pdf` (6.2 MB, 1,098 pages), downloaded from
 <https://www.incometaxindia.gov.in/documents/d/guest/income_tax_act_1961_as_amended_by_fa_act_2026-1-pdf>.
-Save it as `backend/data/raw/income-tax-act-1961-as-amended-by-finance-act-2026.pdf`. The PDF is not committed; its SHA-256 is written to `backend/data/processed/ingest_report.json`.
+The site blocks scripted downloads, so to fetch a fresh copy, use a browser and save it under the same name. Ingestion writes the file's SHA-256 to `backend/data/processed/ingest_report.json`, so the exact copy used can be verified.
 
 ### Process and index the PDF
 Indexing is a one-off step. It can run locally or on a free cloud GPU.

@@ -13,6 +13,8 @@ venv/
 
 # Source PDF and generated artefacts (rebuilt by backend/scripts/ingest.py)
 backend/data/raw/*.pdf
+# The official source PDF is committed so the index can be rebuilt without a manual download
+!backend/data/raw/income-tax-act-1961-as-amended-by-finance-act-2026.pdf
 backend/data/processed/
 backend/data/index/
 backend/data/cache/
